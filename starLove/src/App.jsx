@@ -5,7 +5,6 @@ import './App.css'
 import './assets/Styles/CharactersItem.css'
 import { Link, Outlet } from 'react-router-dom'
 
-// import BackgroundStars from './Components/BackgroundStars.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -21,6 +20,7 @@ function App() {
       </nav>
       <main>
         <Outlet />
+        {/* //<BackgroundStars/> */}
      </main>
     </>
   );

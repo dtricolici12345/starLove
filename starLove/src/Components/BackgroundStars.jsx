@@ -1,4 +1,4 @@
-import BackgroundStars from './BackgroundStars.css'
+import BackgroundStars from './BackgroundStars.css';
 
 
 function BackgroundStars () {
@@ -9,6 +9,7 @@ function BackgroundStars () {
                 <div class="layer"></div>
                 <div class="layer"></div>
             </div>
+            <BackgroundStars/>
         </div>
     )
 };

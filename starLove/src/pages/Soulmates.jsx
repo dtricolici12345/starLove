@@ -4,7 +4,7 @@ import CharactersList from '../Components/CharactersList';
 function Soulmates() {
     return (
         <div>
-             CharactersList
+             My Soulmates
             <CharactersList/>
             </div>
     );
