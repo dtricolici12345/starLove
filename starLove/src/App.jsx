@@ -1,17 +1,10 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
 import { NavLink, Outlet } from 'react-router-dom'
-import DropDownSearch from './components/DropDownSearch';
-import Footer from './conponents/Footer'
 
+import Footer from './components/Footer'
 
-// import BackgroundStars from './Components/BackgroundStars.jsx'
+import './App.css'
 
 function App() {
-
-
   return (
     <>
       <nav className='app-nav'>
@@ -23,7 +16,6 @@ function App() {
       </nav>
       <main className='app-main'>
         <Outlet />
-
       </main>
       <footer className='app-footer'>
         <Footer />

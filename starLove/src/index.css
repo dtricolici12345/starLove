@@ -1,5 +1,4 @@
 :root {
-
   --HeadingXL: lighter 4rem 'Star Jedi', sans-serif;
   --HeadingL: lighter 2.5rem 'Star Jedi', sans-serif;
   --HeadingM: lighter 2rem 'Star Jedi', sans-serif;
@@ -7,7 +6,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
-  /* line-height: 4; */
+  line-height: 4;
   font-weight: 400;
   background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
   font-synthesis: none;

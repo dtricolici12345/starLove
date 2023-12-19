@@ -1,12 +1,13 @@
 import DropDownSearch from "../components/DropDownSearch";
 
 function Search() {
-    const handleDropdownChange = (selectedValue) => {
-        console.log(`Option sélectionnée : ${selectedValue}`);
+    const handleDropdownChange = (selectedValue1, selectedValue2) => {
+        console.log(`Option sélectionnée : ${selectedValue1} ${selectedValue2}`);
     };
     return (
-        <div><DropDownSearch onChange={handleDropdownChange} /></div>
-
+        <div>
+            <DropDownSearch handleDropdownChange={handleDropdownChange} />
+        </div>
     );
 }
 

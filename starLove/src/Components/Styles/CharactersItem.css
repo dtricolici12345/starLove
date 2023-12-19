@@ -1,0 +1,18 @@
+.characterGlobal {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+/* .characterImage {
+    width: 200px;
+} */
+
+.characterImg {
+    height: 300px;
+    width: 100%;
+}

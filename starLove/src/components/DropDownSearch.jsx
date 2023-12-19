@@ -1,19 +1,24 @@
-import React, { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom"
+import { useState } from "react";
+// import { useNavigate } from "react-router-dom"
 import './DropDownSearch.css';
 
-function DropDownSearch({ onChange }) {
-    const [selectedOption, setSelectedOption] = useState('');
-    const navigate = useNavigate();
+function DropDownSearch({ handleDropdownChange }) {
+    const [selectedOption1, setSelectedOption1] = useState('');
+    const [selectedOption2, setSelectedOption2] = useState('');
+    // const navigate = useNavigate();
 
-    function handleSelectChange(event) {
-        setSelectedOption(event.target.value);
-        if (onChange) {
-            onChange(event.target.value);
-        }
+    function handleSelectChange1(event) {
+        setSelectedOption1(event.target.value);
+        // if (onChange) {
+        // }
     }
+    function handleSelectChange2(event) {
+        setSelectedOption2(event.target.value);
+    }
+
     function handleConfirm() {
-        navigate('/soulmates');
+        handleDropdownChange(selectedOption1, selectedOption2);
+        // navigate('/soulmates');
     }
 
     return (
@@ -21,16 +26,16 @@ function DropDownSearch({ onChange }) {
 
             <div className="dropdown">
                 <h1 className="choose">Choose your travel partner</h1>
-                <select value={selectedOption} onChange={handleSelectChange}>
-                    <option value="">Vitality</option>
-                    <option value="option1">Dead</option>
-                    <option value="option2">Alive</option>
+                <select value={selectedOption1} onChange={handleSelectChange1}>
+                    <option value="">Eye Color</option>
+                    <option value="gray-blue">gray-blue</option>
+                    <option value="blue">blue</option>
                 </select>
 
-                <select value={selectedOption} onChange={handleSelectChange}>
-                    <option value="">sex</option>
-                    <option value="option3">Male</option>
-                    <option value="option4">Female</option>
+                <select value={selectedOption2} onChange={handleSelectChange2}>
+                    <option value="">Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                 </select>
                 <button className="dropbtn" onClick={handleConfirm}>Confirm</button>
             </div>
