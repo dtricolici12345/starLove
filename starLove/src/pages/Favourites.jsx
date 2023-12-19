@@ -1,7 +1,13 @@
+
+
+
 function Favourites() {
     return (
-        <div>Page Favourites</div>
+        <div>
+            
+        </div>   
     );
 }
 
 export default Favourites;
+

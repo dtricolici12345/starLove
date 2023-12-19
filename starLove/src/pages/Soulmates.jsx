@@ -1,7 +1,13 @@
+import CharactersList from '../Components/CharactersList';
+// import './assets/Styles/CharactersItem.css'
+
 function Soulmates() {
     return (
-        <div>Page Soulmates</div>
+        <div>
+             CharactersList
+            <CharactersList/>
+            </div>
     );
 }
 
-export default Soulmates;;
+export default Soulmates;
