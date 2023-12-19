@@ -2,8 +2,6 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import Footer from './conponents/Footer'
-import './App.css'
-import './assets/Styles/CharactersItem.css'
 import { Link, Outlet } from 'react-router-dom'
 
 // import BackgroundStars from './Components/BackgroundStars.jsx'
