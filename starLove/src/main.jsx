@@ -7,6 +7,7 @@ import Favourites from './Pages/Favourites.jsx'
 import Home from './Pages/Home.jsx'
 import Search from './Pages/Search.jsx'
 import Soulmates from './Pages/Soulmates.jsx'
+import Team from './pages/Team.jsx'
 
 import App from './App.jsx'
 import './index.css'
@@ -30,6 +31,9 @@ const router = createBrowserRouter([
       }, {
         path: "/Aboutus",
         element: <Aboutus />
+      }, {
+        path: "/team",
+        element: <Team />
       }
 
     ]

@@ -1,8 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
-import './assets/Styles/CharactersItem.css'
+import Footer from './conponents/Footer'
 import { Link, Outlet } from 'react-router-dom'
 
 // import BackgroundStars from './Components/BackgroundStars.jsx'
@@ -18,10 +17,14 @@ function App() {
         <Link to="soulmates">Soulmates</Link>
         <Link to="favourites">Favourites</Link>
         <Link to="aboutus">AboutUs</Link>
+        {/* <Link to="team">Team</Link> */}
       </nav>
       <main>
         <Outlet />
-     </main>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
