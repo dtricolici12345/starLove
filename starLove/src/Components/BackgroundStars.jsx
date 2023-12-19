@@ -1,13 +1,13 @@
-import './BackgroundStars.css'
+import BackgroundStars from './BackgroundStars.css'
 
 
-function BackgroundStars() {
+function BackgroundStars () {
     return (
-        <div className="bg" >
-            <div className="star-field">
-                <div className="layer"></div>
-                <div className="layer"></div>
-                <div className="layer"></div>
+        <div class="bg" >
+            <div class="star-field">
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
             </div>
         </div>
     )
