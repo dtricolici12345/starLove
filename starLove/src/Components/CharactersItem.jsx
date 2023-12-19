@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState} from 'react';
-
+// import CharactersItem from '../Styles/CharactersItem.css'
 
 function CharactersItem({ name, gender, image, favorite}) {
   // create a state isFavorite that has the inital value of isFavorite that comes from the props
@@ -12,6 +12,7 @@ function CharactersItem({ name, gender, image, favorite}) {
 
   return (
     <div >
+      {/* <CharactersItem/> */}
       {name} {gender} 
         <div className="characterImage">
       <img src={image} alt="character"></img>

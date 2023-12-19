@@ -1,5 +1,5 @@
 import CharactersList from '../Components/CharactersList';
-// import './assets/Styles/CharactersItem.css'
+import '../Components/CharactersItem.jsx'
 
 function Soulmates() {
     return (
