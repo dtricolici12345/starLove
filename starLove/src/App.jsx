@@ -16,6 +16,7 @@ function App() {
         <Link to="soulmates">Soulmates</Link>
         <Link to="favourites">Favourites</Link>
         <Link to="aboutus">AboutUs</Link>
+        {/* <Link to="team">Team</Link> */}
       </nav>
       <main>
         <Outlet />
