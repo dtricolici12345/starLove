@@ -1,4 +1,4 @@
-/*comence css commun*/
+
 :root {
 
   --HeadingXL: lighter 4rem 'Star Jedi', sans-serif;
@@ -14,6 +14,7 @@
   font-synthesis: none;
 }
 
+<<<<<<< HEAD
 
 .bg {
 
@@ -119,3 +120,5 @@
 }
 
 /*fun css commun*/
+=======
+>>>>>>> dev
