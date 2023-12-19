@@ -4,7 +4,7 @@ import '../Components/CharactersItem.jsx'
 function Soulmates() {
     return (
         <div>
-             My Soulmates
+            
             <CharactersList/>
             </div>
     );

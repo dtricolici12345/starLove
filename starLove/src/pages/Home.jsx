@@ -2,7 +2,7 @@
 
 function Home() {
     return (
-        <div>Page page
+        <div>
             {/* <BackgroundStars/> */}
         </div>
     );

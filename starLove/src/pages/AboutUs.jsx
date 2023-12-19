@@ -2,7 +2,7 @@
 
 function AboutUs() {
     return (
-        <div>Page AboutUs</div>
+        <div></div>
     );
 }
 
