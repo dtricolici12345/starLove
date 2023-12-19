@@ -20,7 +20,7 @@ function App() {
       </nav>
       <main>
         <Outlet />
-        <CharactersList/>
+        {/* <CharactersList/> */}
       </main>
     </>
   );

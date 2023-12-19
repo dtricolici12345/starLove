@@ -2,12 +2,15 @@ import React from 'react';
 import { useState} from 'react';
 
 
-function CharactersItem({ name, gender, image, favorite}) {
+function CharactersItem({ onChangeFavorite, name, gender, image, favorite}) {
   // create a state isFavorite that has the inital value of isFavorite that comes from the props
   const [isFavorite, setIsFavorite] = useState(favorite);
 
+ 
+
   const handleClickFavorite = () => {
     setIsFavorite(!isFavorite);
+    onChangeFavorite(!isFavorite);
   };
 
   return (

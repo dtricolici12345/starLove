@@ -1,7 +1,14 @@
+import CharactersList from "../Components/CharactersList";
+
+
+
 function Favourites() {
-    return (
+    return ( <>
         <div>Page Favourites</div>
-    );
+
+        <CharactersList />
+        
+        </> );
 }
 
 export default Favourites;
