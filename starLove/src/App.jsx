@@ -2,7 +2,9 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import './assets/Styles/CharactersItem.css'
 import { Link, Outlet } from 'react-router-dom'
+import CharactersList from './Components/CharactersList'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,6 +20,7 @@ function App() {
       </nav>
       <main>
         <Outlet />
+        <CharactersList/>
       </main>
     </>
   );
