@@ -1,6 +1,12 @@
+import DropDownSearch from "../components/DropDownSearch";
+
 function Search() {
+    const handleDropdownChange = (selectedValue) => {
+        console.log(`Option sélectionnée : ${selectedValue}`);
+    };
     return (
-        <div>Page Search</div>
+        <div><DropDownSearch onChange={handleDropdownChange} /></div>
+
     );
 }
 
