@@ -5,8 +5,10 @@ function Home() {
     <div>
         <div className="Welcome">
         <h1>WELCOME !</h1>
+        </div>
+           <div className="Description">
             <h2>Reserve your life-changing journey to the edge of space today with a right partner!</h2>
-            </div>
+           </div>
         <div className="Register">
         <h2>REGISTRATION</h2>
         <form>
