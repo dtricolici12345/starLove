@@ -3,19 +3,18 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import { Link, Outlet } from 'react-router-dom'
+//import './NavBar';
+import NavBar from './components/navbar';
+
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="search">search</Link>
-        <Link to="soulmates">Soulmates</Link>
-        <Link to="favourites">Favourites</Link>
-        <Link to="aboutus">AboutUs</Link>
-      </nav>
+      <div>
+      <NavBar/>
+      </div>
       <main>
         <Outlet />
       </main>
