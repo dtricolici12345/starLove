@@ -695,27 +695,19 @@ let characters = [
 ];
 
 
-// function Characters() {
-//   useEffect(() => {
-//     console.log("je suis dans useEffect");
-//   /*fetch("https://github.com/Miadil/starwars-api/blob/master/api/cardGames.json", {mode:'cors'})
-//   .then((res) => console.log(res))
-//   .then((data) => console.log(data));*/
-//   console.log(characters);
-//   },[]);
-     
-  // return (
-  //   <div>
-  //     {console.log("je suis dans le return")}
-  //   </div>
-  // );
-  // }
-
-
 function CharactersList() {
+const [characters, setCharacters]=useState([])
+
+  useEffect(() => {
+        console.log("je suis dans useEffect");
+      fetch("https://miadil.github.io/starwars-api/api/all.json" )
+      .then((res) =>res.json())
+      .then((data) =>console.log(data)||setCharacters(data));
+     
+      },[]);
   return (
     <div>
-      {characters.map((character) => (
+      {characters?.map((character) => (
         <CharactersItem
           key={character.id}
           name={character.name}
