@@ -1,4 +1,4 @@
-import DropDownSearch from "../components/DropDownSearch";
+import DropDownSearch from "../Components/DropDownSearch";
 
 function Search() {
     const handleDropdownChange = (selectedValue1, selectedValue2) => {
