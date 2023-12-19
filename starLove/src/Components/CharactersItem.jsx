@@ -5,6 +5,7 @@ import { useState} from 'react';
 function CharactersItem({ onChangeFavorite, name, gender, image, favorite}) {
   // create a state isFavorite that has the inital value of isFavorite that comes from the props
   const [isFavorite, setIsFavorite] = useState(favorite);
+  
 
  
 

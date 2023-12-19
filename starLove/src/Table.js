@@ -11,7 +11,7 @@ export let characters = [
       "gender": "male",
       "homeworld": "tatooine",
       "wiki": "http://starwars.wikia.com/wiki/Luke_Skywalker",
-      "image": "./assets/LukeSkywalker.png",
+      "image": "./assets/Styles/LukeSkywalker.png",
       "born": -19,
       "bornLocation": "polis massa",
       "died": 34,

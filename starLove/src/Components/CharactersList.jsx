@@ -2,7 +2,7 @@
 // import MenuItem from './MenuItem';
 import { useState, useEffect } from 'react';
 import CharactersItem from './CharactersItem';
-import {characters} from '../Table';
+// import {characters} from '../Table';
 
 // let characters = [
 //   {
@@ -712,22 +712,23 @@ import {characters} from '../Table';
   // );
   // }
 
-
-function CharactersList() {
-
-   const handleChangeFavorite () => {
-
-  }
+  function CharactersList({ characters = [] }) {
+ 
+    
+    const handleChangeFavorite = (id, isFavorite) => {
+      characters.find(item => item.id === id).favorite = isFavorite
+    }
+  
   return (
     <div>
       {characters.map((character) => (
         <CharactersItem
-        onChangeFavorite={handleChangeFavorite}
+        onChangeFavorite={(isFavorite) => handleChangeFavorite(character.id, isFavorite)}
           key={character.id}
           name={character.name}
           gender={character.gender}
           image={character.image}
-          favorite={false}
+          favorite={character.favorite}
         />
       ))}
     </div>
