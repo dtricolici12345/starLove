@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import Anneaux from "../assets/Anneaux.png"
+import Anneaux from "../assets/Anneaux.jpg"
 import "./Styles/Footer.css"
 
 function Footer() {
