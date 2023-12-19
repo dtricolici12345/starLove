@@ -1,8 +1,8 @@
-import React from 'react';
-import { useState} from 'react';
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
 
-
-function CharactersItem({ name, gender, image, favorite}) {
+import "./Styles/CharactersItem.css"
+function CharactersItem({ name, gender, image, favorite }) {
   // create a state isFavorite that has the inital value of isFavorite that comes from the props
   const [isFavorite, setIsFavorite] = useState(favorite);
 
@@ -11,34 +11,16 @@ function CharactersItem({ name, gender, image, favorite}) {
   };
 
   return (
-    <div >
-      {name} {gender} 
-        <div className="characterImage">
-      <img src={image} alt="character"></img>
-        </div>
-        <div
-          id="favorite"
-          className={isFavorite ? 'isFavorite' : 'notFavorite'}
-          onClick={handleClickFavorite}
-        />
-
-      {/* <div className="leftContainer">
-        <div className="imgContainer">
-          <img src={img} alt="plate"></img>
-        </div>
-        <div className="itemDescription">
-          <h3>{name}</h3>
-          <p>{desc}</p>
-        </div>
+    <div className="characterGlobal">
+      {name} {gender}
+      <div className="characterImage">
+        <img src={image} alt="character" className='characterImg' />
       </div>
-      <div className="rightContainer">
-        <div>{price} EUR</div>
-        <div
-          id="favorite"
-          className={isFavorite ? 'isFavorite' : 'notFavorite'}
-          onClick={handleClickFavorite}
-        />
-      </div> */}
+      <div
+        id="favorite"
+        className={isFavorite ? 'isFavorite' : 'notFavorite'}
+        onClick={handleClickFavorite}
+      />
     </div>
   );
 }
