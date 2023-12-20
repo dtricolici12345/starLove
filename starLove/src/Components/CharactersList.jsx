@@ -60,6 +60,7 @@ function CharactersList() {
             }
             name={character.name}
             gender={character.gender}
+            homeworld={character.homeworld}
             image={character.image}
             favorite={character.favorite}
           />

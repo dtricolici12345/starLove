@@ -14,7 +14,6 @@ function App() {
         >
           Home
         </NavLink>
-        {/* <NavLink to="/search" className={({ isActive }) => isActive ? "active-link" : "link"}>Search</NavLink> */}
         <NavLink
           to="/soulmates"
           className={({ isActive }) => (isActive ? "active-link" : "link")}
