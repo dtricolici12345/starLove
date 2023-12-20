@@ -1,27 +1,28 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { NavLink, Outlet } from 'react-router-dom'
+
+import Footer from './components/Footer'
+
 import './App.css'
-import { Link, Outlet } from 'react-router-dom'
 
-function App() {
-  // const [count, setCount] = useState(0)
 
-  return (
+ function App () {
+ return ( 
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="search">search</Link>
-        <Link to="soulmates">Soulmates</Link>
-        <Link to="favourites">Favourites</Link>
-        <Link to="aboutus">AboutUs</Link>
+      <nav className='app-nav'>
+        <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : "link"}>Home</NavLink>
+        <NavLink to="/search" className={({ isActive }) => isActive ? "active-link" : "link"}>Search</NavLink>
+        <NavLink to="/soulmates" className={({ isActive }) => isActive ? "active-link" : "link"}>Soulmates</NavLink>
+        <NavLink to="/favourites" className={({ isActive }) => isActive ? "active-link" : "link"}>Favourites</NavLink>
+        <NavLink to="/aboutus" className={({ isActive }) => isActive ? "active-link" : "link"}>About Us</NavLink>
       </nav>
-      <main>
+      <main className='app-main'>
         <Outlet />
       </main>
+      <footer className='app-footer'>
+        <Footer />
+      </footer>
     </>
   );
 }
 
-
-export default App; 
+export default App;

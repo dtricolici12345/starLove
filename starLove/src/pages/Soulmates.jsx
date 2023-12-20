@@ -1,7 +1,13 @@
+import CharactersList from '../Components/CharactersList';
+import '../Components/CharactersItem.jsx'
+
 function Soulmates() {
     return (
-        <div>Page Soulmates</div>
+        <div>
+            
+            <CharactersList/>
+            </div>
     );
 }
 
-export default Soulmates;;
+export default Soulmates;
