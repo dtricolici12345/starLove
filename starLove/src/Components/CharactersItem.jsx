@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 import "./Styles/CharactersItem.css"
-function CharactersItem({ name, gender, image, favorite }) {
+function CharactersItem({ name, gender, homeworld, image, favorite }) {
   // create a state isFavorite that has the inital value of isFavorite that comes from the props
   const [isFavorite, setIsFavorite] = useState(favorite);
 
@@ -12,7 +12,11 @@ function CharactersItem({ name, gender, image, favorite }) {
 
   return (
     <div className="characterGlobal">
-      {name} {gender}
+      <div className="characterDisplay">
+        <div>{name} </div>
+        <div>{gender} </div>
+        <div>From homeworld: {homeworld} </div>
+      </div>
       <div className="characterImage">
         <img src={image} alt="character" className='characterImg' />
       </div>

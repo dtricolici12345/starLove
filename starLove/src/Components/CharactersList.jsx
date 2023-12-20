@@ -33,6 +33,7 @@ function CharactersList() {
             key={character.id}
             name={character.name}
             gender={character.gender}
+            homeworld={character.homeworld}
             image={character.image}
             favorite={false}
           />

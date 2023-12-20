@@ -6,7 +6,17 @@
     flex-direction: column;
     align-items: center;
     margin: 10px;
-}
+    box-shadow: 10px 5px 40px 5px white;
+  }
+
+  .characterDisplay {
+    display:flex;
+    flex-direction: column;
+    color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height:20px;
+    
+  }
 
 /* .characterImage {
     width: 200px;
