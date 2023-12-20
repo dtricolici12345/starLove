@@ -19,18 +19,17 @@ body {
     aspect-ratio: 1 / 1;
 }
 
-ul {
+#card-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
-    outline: 2px dotted magenta;
     z-index: 1;
 }
 
-li {
+.list-ind {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -61,17 +60,11 @@ li {
     color: rgb(13, 235, 228);
     display: block;
     margin-bottom: 0;
-}
-
-h1 {
-
     font-size: 2em;
     font-weight: bold;
-    margin-block-start: .67em;
-    margin-block-end: .67em;
 }
 
-p {
+.text-pa {
     margin-top: 0;
     color: white;
 }
@@ -83,28 +76,28 @@ svg {
     z-index: 0;
 }
 
-li:nth-child(2),
-li:nth-child(2) .card {
+.list-ind:nth-child(2),
+.list-ind:nth-child(2) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -1s);
 }
 
-li:nth-child(3),
-li:nth-child(3) .card {
+.list-ind:nth-child(3),
+.list-ind:nth-child(3) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -2s);
 }
 
-li:nth-child(4),
-li:nth-child(4) .card {
+.list-ind:nth-child(4),
+.list-ind:nth-child(4) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -3s);
 }
 
-li:nth-child(5),
-li:nth-child(5) .card {
+.list-ind:nth-child(5),
+.list-ind:nth-child(5) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -4s);
 }
 
-li:nth-child(6),
-li:nth-child(6) .card {
+.list-ind:nth-child(6),
+.list-ind:nth-child(6) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -5s);
 }
 
