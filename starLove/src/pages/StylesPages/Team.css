@@ -6,9 +6,9 @@
     --easing: cubic-bezier(0.000, 0.37, 1.000, 0.63);
 }
 
-body {
+body.team-body {
     margin: 0;
-    /* background-color: black; */
+    background-color: black;
 }
 
 .void {
