@@ -30,6 +30,17 @@ function DropDownSearch({ handleDropdownChange }) {
                     <option value="">Eye Color</option>
                     <option value="gray-blue">gray-blue</option>
                     <option value="blue">blue</option>
+                    <option value="yellow">yellow</option>
+                    <option value="red">red</option>
+                    <option value="brown">brown</option>
+                    <option value="black">black</option>
+                    <option value="orange">orange</option>
+                    <option value="pink">pink</option>
+                    <option value="purple">purple</option>
+                    <option value="hazel">hazel</option>
+                    <option value="green-gold">green-gold</option>
+                    <option value="light brown">light brown</option>
+
                 </select>
 
                 <select value={selectedOption2} onChange={handleSelectChange2}>
