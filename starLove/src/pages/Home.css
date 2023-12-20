@@ -1,0 +1,43 @@
+.Welcome {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+}
+
+.Description {
+    text-align: center;
+}
+
+.Register {
+    color: white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.52);
+    width: 10cm;
+    margin-left:auto;
+    margin-right: auto;
+
+ 
+}
+
+.Submit {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(189, 181, 181, 0.568);
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  textarea {
+    border-radius: 10px;
+  }

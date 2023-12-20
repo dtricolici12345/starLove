@@ -4,8 +4,9 @@ import Footer from './components/Footer'
 
 import './App.css'
 
-function App() {
-  return (
+
+ function App () {
+ return ( 
     <>
       <nav className='app-nav'>
         <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : "link"}>Home</NavLink>
