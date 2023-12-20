@@ -1,7 +1,7 @@
 // import BackgroundStars from './BackgroundStars.css'
 
 
-// function BackgroundStars () {
+// function BackgroundStars() {
 //     return (
 //         <div class="bg" >
 //             <div class="star-field">
